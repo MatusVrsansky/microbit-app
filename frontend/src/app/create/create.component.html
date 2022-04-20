@@ -1,0 +1,29 @@
+<div class="container mt-5">
+
+    <!-- show error message -->
+    <div *ngIf="errormsg" class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{errormsg}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div *ngIf="successmsg" class="alert alert-success alert-dismissible fade show" role="alert">
+        {{successmsg}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <form [formGroup]="userForm" (ngSubmit)="userSubmit()">
+        <div class="col-lg-6 mt-2">
+            <input type="text" class="form-control" formControlName="fullname" placeholder="Enter full name">
+        </div>
+        <div class="col-lg-6 mt-2">
+            <input type="text" class="form-control" formControlName="email" placeholder="Enter Email">
+        </div>
+        <div class="col-lg-6 mt-2">
+            <input type="text" class="form-control" formControlName="mobile_number" placeholder="Enter mobile number">
+        </div>
+
+        <div class="col-lg-4 mt-2">
+            <button class="btn btn-primary btn-sm">Create</button>
+        </div>
+    </form>
+</div>

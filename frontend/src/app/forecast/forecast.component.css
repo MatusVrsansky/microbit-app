@@ -1,5 +1,5 @@
 #divWeatherMain{
-    display: block;
+    display: grid;
     border-radius: 10px;
     width: 200px;
     height: 220px;

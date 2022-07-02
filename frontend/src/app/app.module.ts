@@ -6,18 +6,23 @@ import { AppComponent } from './app.component';
 import { CreateComponent } from './create/create.component';
 import { ReadComponent } from './read/read.component';
 
+
 import {HttpClientModule} from '@angular/common/http';
 import { ApiserviceService } from './apiservice.service';
 
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ForecastComponent } from './forecast/forecast.component'
+import { HistoryComponent } from './history/history.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateComponent,
     ReadComponent,
-    ForecastComponent
+    ForecastComponent,
+    HistoryComponent
   ],
   imports: [
     BrowserModule,
